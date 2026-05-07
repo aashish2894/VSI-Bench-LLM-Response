@@ -1,0 +1,74 @@
+{
+  "scene_name": "scene0518_00",
+  "video_path": "/Users/aashishkumar/Downloads/scannet/scene0518_00.mp4",
+  "source": "local:data/vsi_bench/test.jsonl",
+  "num_questions": 10,
+  "questions": [
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",
+      "question_type": "object_size_estimation"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "What is the length of the longest dimension (length, width, or height) of the tv, measured in centimeters?",
+      "question_type": "object_size_estimation"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "What is the length of the longest dimension (length, width, or height) of the backpack, measured in centimeters?",
+      "question_type": "object_size_estimation"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "What is the size of this room (in square meters)? \nIf multiple rooms are shown, estimate the size of the combined space.",
+      "question_type": "room_size_estimation"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "How many chair(s) are in this room?",
+      "question_type": "object_counting"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "How many pillow(s) are in this room?",
+      "question_type": "object_counting"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "How many table(s) are in this room?",
+      "question_type": "object_counting"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "Measuring from the closest point of each object, what is the distance between the tv and the sofa (in meters)?",
+      "question_type": "object_abs_distance"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "Measuring from the closest point of each object, what is the distance between the backpack and the tv (in meters)?",
+      "question_type": "object_abs_distance"
+    },
+    {
+      "dataset": "scannet",
+      "scene_name": "scene0518_00",
+      "question": "You are a robot beginning at the tv facing the tv. You want to navigate to the table. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the table. You have reached the final destination.",
+      "question_type": "route_planning",
+      "options": [
+        "A. Turn Right",
+        "B. Turn Left",
+        "C. Turn Back"
+      ]
+    }
+  ],
+  "ground_truth_included": false
+}
