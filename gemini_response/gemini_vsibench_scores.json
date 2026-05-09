@@ -1,0 +1,84 @@
+{
+  "response_dir": "data/vsi_bench/gemini_response",
+  "ground_truth_dir": "data/vsi_bench/exports",
+  "num_scenes_scored": 3,
+  "num_total_questions_scored": 81,
+  "scene_reports": [
+    {
+      "scene_name": "scene0231_00",
+      "response_file": "data/vsi_bench/gemini_response/scene0231_00_gemini_response.json",
+      "ground_truth_file": "data/vsi_bench/exports/scene0231_00_questions.json",
+      "num_questions_in_ground_truth": 51,
+      "num_questions_scored": 51,
+      "num_missing_predictions": 0,
+      "missing_predictions": [],
+      "benchmark_scores": {
+        "overall": 51.404320987654316,
+        "object_counting_MRA:.5:.95:.05": 25.454545454545453,
+        "object_abs_distance_MRA:.5:.95:.05": 0.0,
+        "object_size_estimation_MRA:.5:.95:.05": 55.55555555555556,
+        "room_size_estimation_MRA:.5:.95:.05": 54.54545454545454,
+        "object_rel_distance_accuracy": 33.33333333333333,
+        "object_rel_direction_hard_accuracy": 100.0,
+        "object_rel_direction_accuracy": 100.0,
+        "route_planning_accuracy": 0.0,
+        "obj_appearance_order_accuracy": 93.75,
+        "tabulated_keys": "overall, object_counting_MRA:.5:.95:.05, object_abs_distance_MRA:.5:.95:.05, object_size_estimation_MRA:.5:.95:.05, room_size_estimation_MRA:.5:.95:.05, object_rel_distance_accuracy, object_rel_direction_hard_accuracy, object_rel_direction_accuracy, route_planning_accuracy, obj_appearance_order_accuracy",
+        "tabulated_results": "51.404, 25.455, 0.000, 55.556, 54.545, 33.333, 100.000, 100.000, 0.000, 93.750"
+      }
+    },
+    {
+      "scene_name": "scene0277_02",
+      "response_file": "data/vsi_bench/gemini_response/scene0277_02_gemini_response.json",
+      "ground_truth_file": "data/vsi_bench/exports/scene0277_02_questions.json",
+      "num_questions_in_ground_truth": 20,
+      "num_questions_scored": 20,
+      "num_missing_predictions": 0,
+      "missing_predictions": [],
+      "benchmark_scores": {
+        "overall": 66.1075036075036,
+        "object_counting_MRA:.5:.95:.05": 100.0,
+        "object_abs_distance_MRA:.5:.95:.05": 24.675324675324674,
+        "object_size_estimation_MRA:.5:.95:.05": 51.515151515151516,
+        "room_size_estimation_MRA:.5:.95:.05": 45.45454545454545,
+        "object_rel_distance_accuracy": 75.0,
+        "route_planning_accuracy": 100.0,
+        "tabulated_keys": "overall, object_counting_MRA:.5:.95:.05, object_abs_distance_MRA:.5:.95:.05, object_size_estimation_MRA:.5:.95:.05, room_size_estimation_MRA:.5:.95:.05, object_rel_distance_accuracy, route_planning_accuracy",
+        "tabulated_results": "66.108, 100.000, 24.675, 51.515, 45.455, 75.000, 100.000"
+      }
+    },
+    {
+      "scene_name": "scene0518_00",
+      "response_file": "data/vsi_bench/gemini_response/scene0518_00_gemini_response.json",
+      "ground_truth_file": "data/vsi_bench/exports/scene0518_00_questions.json",
+      "num_questions_in_ground_truth": 10,
+      "num_questions_scored": 10,
+      "num_missing_predictions": 0,
+      "missing_predictions": [],
+      "benchmark_scores": {
+        "overall": 40.90909090909091,
+        "object_counting_MRA:.5:.95:.05": 39.39393939393939,
+        "object_abs_distance_MRA:.5:.95:.05": 31.818181818181817,
+        "object_size_estimation_MRA:.5:.95:.05": 78.78787878787878,
+        "room_size_estimation_MRA:.5:.95:.05": 54.54545454545454,
+        "route_planning_accuracy": 0.0,
+        "tabulated_keys": "overall, object_counting_MRA:.5:.95:.05, object_abs_distance_MRA:.5:.95:.05, object_size_estimation_MRA:.5:.95:.05, room_size_estimation_MRA:.5:.95:.05, route_planning_accuracy",
+        "tabulated_results": "40.909, 39.394, 31.818, 78.788, 54.545, 0.000"
+      }
+    }
+  ],
+  "overall_benchmark_scores": {
+    "overall": 59.9817620650954,
+    "object_counting_MRA:.5:.95:.05": 38.38383838383839,
+    "object_abs_distance_MRA:.5:.95:.05": 14.772727272727273,
+    "object_size_estimation_MRA:.5:.95:.05": 58.080808080808076,
+    "room_size_estimation_MRA:.5:.95:.05": 51.515151515151516,
+    "object_rel_distance_accuracy": 50.0,
+    "object_rel_direction_hard_accuracy": 100.0,
+    "object_rel_direction_accuracy": 100.0,
+    "route_planning_accuracy": 33.33333333333333,
+    "obj_appearance_order_accuracy": 93.75,
+    "tabulated_keys": "overall, object_counting_MRA:.5:.95:.05, object_abs_distance_MRA:.5:.95:.05, object_size_estimation_MRA:.5:.95:.05, room_size_estimation_MRA:.5:.95:.05, object_rel_distance_accuracy, object_rel_direction_hard_accuracy, object_rel_direction_accuracy, route_planning_accuracy, obj_appearance_order_accuracy",
+    "tabulated_results": "59.982, 38.384, 14.773, 58.081, 51.515, 50.000, 100.000, 100.000, 33.333, 93.750"
+  }
+}
