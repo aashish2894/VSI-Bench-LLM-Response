@@ -583,16 +583,430 @@
       "num_missing_response_questions": 0,
       "unmatched_response_questions": [],
       "missing_response_questions": []
+    },
+    {
+      "scene_name": "scene0277_02",
+      "response_file": "gemini_response/scene0277_02_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0277_02_questions.json",
+      "summary": {
+        "num_questions": 20,
+        "num_numeric_questions": 15,
+        "num_mcq_questions": 5,
+        "numeric_mean_absolute_error": 14.0933,
+        "numeric_median_absolute_error": 1.3,
+        "numeric_max_absolute_error": 91.0,
+        "numeric_num_exact_matches": 1,
+        "mcq_num_correct": 4,
+        "mcq_accuracy": 0.8,
+        "per_question_type": {
+          "object_abs_distance": {
+            "num_questions": 7,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.9143,
+            "max_absolute_error": 1.3
+          },
+          "object_counting": {
+            "num_questions": 1,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.0,
+            "max_absolute_error": 0.0
+          },
+          "object_rel_distance": {
+            "num_questions": 4,
+            "evaluation_type": "mcq",
+            "num_correct": 3,
+            "accuracy": 0.75
+          },
+          "object_size_estimation": {
+            "num_questions": 6,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 33.6667,
+            "max_absolute_error": 91.0
+          },
+          "room_size_estimation": {
+            "num_questions": 1,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 3.0,
+            "max_absolute_error": 3.0
+          },
+          "route_planning": {
+            "num_questions": 1,
+            "evaluation_type": "mcq",
+            "num_correct": 1,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "question_results": [
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (table, trash bin, chair, door) is the closest to the bed?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. door",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (bed, chair, trash bin, radiator) is the closest to the door?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. bed",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (bed, window, door, trash bin) is the closest to the chair?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. trash bin",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (chair, radiator, table, trash bin) is the closest to the door?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. table",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the bed, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "210 cm",
+          "ground_truth": "221",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 210.0,
+          "parsed_ground_truth": 221.0,
+          "absolute_error": 11.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the chair, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "95 cm",
+          "ground_truth": "86",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 95.0,
+          "parsed_ground_truth": 86.0,
+          "absolute_error": 9.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the window, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "195 cm",
+          "ground_truth": "171",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 195.0,
+          "parsed_ground_truth": 171.0,
+          "absolute_error": 24.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the radiator, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "135 cm",
+          "ground_truth": "90",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 135.0,
+          "parsed_ground_truth": 90.0,
+          "absolute_error": 45.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the door, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "205 cm",
+          "ground_truth": "114",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 205.0,
+          "parsed_ground_truth": 114.0,
+          "absolute_error": 91.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the table, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "155 cm",
+          "ground_truth": "133",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 155.0,
+          "parsed_ground_truth": 133.0,
+          "absolute_error": 22.0
+        },
+        {
+          "question": "What is the size of this room (in square meters)? \nIf multiple rooms are shown, estimate the size of the combined space.",
+          "question_type": "room_size_estimation",
+          "gemini_answer": "14 square meters",
+          "ground_truth": "11.0",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 14.0,
+          "parsed_ground_truth": 11.0,
+          "absolute_error": 3.0
+        },
+        {
+          "question": "How many trash bin(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the chair and the bed (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "2.2 meters",
+          "ground_truth": "0.9",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.2,
+          "parsed_ground_truth": 0.9,
+          "absolute_error": 1.3
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the door and the bed (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "0.6 meters",
+          "ground_truth": "1.7",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 0.6,
+          "parsed_ground_truth": 1.7,
+          "absolute_error": 1.1
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the door and the chair (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.8 meters",
+          "ground_truth": "2.9",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.8,
+          "parsed_ground_truth": 2.9,
+          "absolute_error": 0.9
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the door and the window (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "4.5 meters",
+          "ground_truth": "3.9",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.5,
+          "parsed_ground_truth": 3.9,
+          "absolute_error": 0.6
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the door and the radiator (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "4.2 meters",
+          "ground_truth": "3.7",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.2,
+          "parsed_ground_truth": 3.7,
+          "absolute_error": 0.5
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the table and the bed (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "1.8 meters",
+          "ground_truth": "1.1",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.8,
+          "parsed_ground_truth": 1.1,
+          "absolute_error": 0.7
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the table and the door (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.8 meters",
+          "ground_truth": "2.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.8,
+          "parsed_ground_truth": 2.5,
+          "absolute_error": 1.3
+        },
+        {
+          "question": "You are a robot beginning at the door and facing the door. You want to navigate to the window. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the window. You have reached the final destination.",
+          "question_type": "route_planning",
+          "gemini_answer": "B. Turn Back",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        }
+      ],
+      "num_unmatched_response_questions": 0,
+      "num_missing_response_questions": 0,
+      "unmatched_response_questions": [],
+      "missing_response_questions": []
+    },
+    {
+      "scene_name": "scene0518_00",
+      "response_file": "gemini_response/scene0518_00_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0518_00_questions.json",
+      "summary": {
+        "num_questions": 10,
+        "num_numeric_questions": 9,
+        "num_mcq_questions": 1,
+        "numeric_mean_absolute_error": 2.9667,
+        "numeric_median_absolute_error": 1.0,
+        "numeric_max_absolute_error": 14.0,
+        "numeric_num_exact_matches": 1,
+        "mcq_num_correct": 0,
+        "mcq_accuracy": 0.0,
+        "per_question_type": {
+          "object_abs_distance": {
+            "num_questions": 2,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.5,
+            "max_absolute_error": 0.7
+          },
+          "object_counting": {
+            "num_questions": 3,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.6667,
+            "max_absolute_error": 1.0
+          },
+          "object_size_estimation": {
+            "num_questions": 3,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 7.0,
+            "max_absolute_error": 14.0
+          },
+          "room_size_estimation": {
+            "num_questions": 1,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 2.7,
+            "max_absolute_error": 2.7
+          },
+          "route_planning": {
+            "num_questions": 1,
+            "evaluation_type": "mcq",
+            "num_correct": 0,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "question_results": [
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "230 cm",
+          "ground_truth": "229",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 230.0,
+          "parsed_ground_truth": 229.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the tv, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "110 cm",
+          "ground_truth": "96",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 110.0,
+          "parsed_ground_truth": 96.0,
+          "absolute_error": 14.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the backpack, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "45 cm",
+          "ground_truth": "51",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 45.0,
+          "parsed_ground_truth": 51.0,
+          "absolute_error": 6.0
+        },
+        {
+          "question": "What is the size of this room (in square meters)? \nIf multiple rooms are shown, estimate the size of the combined space.",
+          "question_type": "room_size_estimation",
+          "gemini_answer": "15 square meters",
+          "ground_truth": "12.3",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 15.0,
+          "parsed_ground_truth": 12.3,
+          "absolute_error": 2.7
+        },
+        {
+          "question": "How many chair(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "3",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many pillow(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "How many table(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "3",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the tv and the sofa (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "2.2 meters",
+          "ground_truth": "1.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.2,
+          "parsed_ground_truth": 1.5,
+          "absolute_error": 0.7
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the backpack and the tv (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "1.8 meters",
+          "ground_truth": "1.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.8,
+          "parsed_ground_truth": 1.5,
+          "absolute_error": 0.3
+        },
+        {
+          "question": "You are a robot beginning at the tv facing the tv. You want to navigate to the table. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the table. You have reached the final destination.",
+          "question_type": "route_planning",
+          "gemini_answer": "C. Turn Back",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        }
+      ],
+      "num_unmatched_response_questions": 0,
+      "num_missing_response_questions": 0,
+      "unmatched_response_questions": [],
+      "missing_response_questions": []
     }
   ],
   "overall_summary": {
-    "num_scenes_compared": 1,
-    "num_questions_compared": 51,
-    "overall_numeric_mean_absolute_error": 22.2682,
-    "overall_numeric_median_absolute_error": 4.6,
+    "num_scenes_compared": 3,
+    "num_questions_compared": 81,
+    "overall_numeric_mean_absolute_error": 15.8261,
+    "overall_numeric_median_absolute_error": 2.95,
     "overall_numeric_max_absolute_error": 332.0,
-    "overall_mcq_accuracy": 0.7931,
-    "overall_mcq_num_correct": 23,
-    "overall_mcq_num_questions": 29
+    "overall_mcq_accuracy": 0.7714,
+    "overall_mcq_num_correct": 27,
+    "overall_mcq_num_questions": 35
   }
 }
