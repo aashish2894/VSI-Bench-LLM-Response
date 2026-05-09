@@ -1,33 +1,59 @@
 scene_name,question_index,question_type,evaluation_type,question,gemini_answer,ground_truth,parsed_prediction,parsed_ground_truth,absolute_error,is_correct
-scene0277_02,1,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (table, trash bin, chair, door) is the closest to the bed?",D. door,B,D,B,,False
-scene0277_02,2,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (bed, chair, trash bin, radiator) is the closest to the door?",A. bed,A,A,A,,True
-scene0277_02,3,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (bed, window, door, trash bin) is the closest to the chair?",D. trash bin,D,D,D,,True
-scene0277_02,4,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (chair, radiator, table, trash bin) is the closest to the door?",C. table,C,C,C,,True
-scene0277_02,5,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the bed, measured in centimeters?",210 cm,221,210.0,221.0,11.0,
-scene0277_02,6,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the chair, measured in centimeters?",95 cm,86,95.0,86.0,9.0,
-scene0277_02,7,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the window, measured in centimeters?",195 cm,171,195.0,171.0,24.0,
-scene0277_02,8,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the radiator, measured in centimeters?",135 cm,90,135.0,90.0,45.0,
-scene0277_02,9,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the door, measured in centimeters?",205 cm,114,205.0,114.0,91.0,
-scene0277_02,10,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the table, measured in centimeters?",155 cm,133,155.0,133.0,22.0,
-scene0277_02,11,room_size_estimation,numeric,"What is the size of this room (in square meters)? 
-If multiple rooms are shown, estimate the size of the combined space.",14 square meters,11.0,14.0,11.0,3.0,
-scene0277_02,12,object_counting,numeric,How many trash bin(s) are in this room?,2,2,2.0,2.0,0.0,
-scene0277_02,13,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the chair and the bed (in meters)?",2.2 meters,0.9,2.2,0.9,1.3,
-scene0277_02,14,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the bed (in meters)?",0.6 meters,1.7,0.6,1.7,1.1,
-scene0277_02,15,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the chair (in meters)?",3.8 meters,2.9,3.8,2.9,0.9,
-scene0277_02,16,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the window (in meters)?",4.5 meters,3.9,4.5,3.9,0.6,
-scene0277_02,17,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the radiator (in meters)?",4.2 meters,3.7,4.2,3.7,0.5,
-scene0277_02,18,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the table and the bed (in meters)?",1.8 meters,1.1,1.8,1.1,0.7,
-scene0277_02,19,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the table and the door (in meters)?",3.8 meters,2.5,3.8,2.5,1.3,
-scene0277_02,20,route_planning,mcq,"You are a robot beginning at the door and facing the door. You want to navigate to the window. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the window. You have reached the final destination.",B. Turn Back,B,B,B,,True
-scene0518_00,1,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",230 cm,229,230.0,229.0,1.0,
-scene0518_00,2,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the tv, measured in centimeters?",110 cm,96,110.0,96.0,14.0,
-scene0518_00,3,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the backpack, measured in centimeters?",45 cm,51,45.0,51.0,6.0,
-scene0518_00,4,room_size_estimation,numeric,"What is the size of this room (in square meters)? 
-If multiple rooms are shown, estimate the size of the combined space.",15 square meters,12.3,15.0,12.3,2.7,
-scene0518_00,5,object_counting,numeric,How many chair(s) are in this room?,3,2,3.0,2.0,1.0,
-scene0518_00,6,object_counting,numeric,How many pillow(s) are in this room?,2,2,2.0,2.0,0.0,
-scene0518_00,7,object_counting,numeric,How many table(s) are in this room?,3,2,3.0,2.0,1.0,
-scene0518_00,8,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the tv and the sofa (in meters)?",2.2 meters,1.5,2.2,1.5,0.7,
-scene0518_00,9,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the backpack and the tv (in meters)?",1.8 meters,1.5,1.8,1.5,0.3,
-scene0518_00,10,route_planning,mcq,"You are a robot beginning at the tv facing the tv. You want to navigate to the table. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the table. You have reached the final destination.",C. Turn Back,A,C,A,,False
+scene0231_00,1,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (door, counter, clock, plant) is the closest to the backpack?",C. clock,B,C,B,,False
+scene0231_00,2,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (clock, chair, backpack, lamp) is the closest to the pillow?",D. lamp,D,D,D,,True
+scene0231_00,3,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (door, pillow, clock, plant) is the closest to the backpack?",C. clock,A,C,A,,False
+scene0231_00,4,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (door, sofa, microwave, trash bin) is the closest to the clock?",C. microwave,A,C,A,,False
+scene0231_00,5,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (backpack, lamp, clock, pillow) is the closest to the counter?",C. clock,C,C,C,,True
+scene0231_00,6,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (refrigerator, lamp, sofa, counter) is the closest to the backpack?",C. sofa,D,C,D,,False
+scene0231_00,7,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",220 cm,196,220.0,196.0,24.0,
+scene0231_00,8,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the counter, measured in centimeters?",210 cm,542,210.0,542.0,332.0,
+scene0231_00,9,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the refrigerator, measured in centimeters?",175 cm,173,175.0,173.0,2.0,
+scene0231_00,10,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the pillow, measured in centimeters?",50 cm,39,50.0,39.0,11.0,
+scene0231_00,11,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the plant, measured in centimeters?",40 cm,49,40.0,49.0,9.0,
+scene0231_00,12,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the backpack, measured in centimeters?",45 cm,60,45.0,60.0,15.0,
+scene0231_00,13,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the microwave, measured in centimeters?",55 cm,64,55.0,64.0,9.0,
+scene0231_00,14,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the clock, measured in centimeters?",35 cm,27,35.0,27.0,8.0,
+scene0231_00,15,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the door, measured in centimeters?",205 cm,165,205.0,165.0,40.0,
+scene0231_00,16,object_rel_direction_hard,mcq,"If I am standing by the sofa and facing the counter, is the backpack to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",A. front-left,A,A,A,,True
+scene0231_00,17,object_rel_direction_hard,mcq,"If I am standing by the sofa and facing the backpack, is the counter to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",D. front-right,D,D,D,,True
+scene0231_00,18,object_rel_direction_hard,mcq,"If I am standing by the counter and facing the sofa, is the backpack to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",C. front-right,C,C,C,,True
+scene0231_00,19,object_rel_direction_hard,mcq,"If I am standing by the sofa and facing the counter, is the clock to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",B. front-left,B,B,B,,True
+scene0231_00,20,object_rel_direction_hard,mcq,"If I am standing by the sofa and facing the clock, is the counter to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",A. front-right,A,A,A,,True
+scene0231_00,21,object_rel_direction_hard,mcq,"If I am standing by the counter and facing the sofa, is the clock to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",C. front-right,C,C,C,,True
+scene0231_00,22,room_size_estimation,numeric,"What is the size of this room (in square meters)? 
+If multiple rooms are shown, estimate the size of the combined space.",48 square meters,39.3,48.0,39.3,8.7,
+scene0231_00,23,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: chair, pillow, plant, window?","B. chair, window, pillow, plant",B,B,B,,True
+scene0231_00,24,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: plant, counter, lamp, pillow?","D. counter, pillow, plant, lamp",C,D,C,,False
+scene0231_00,25,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: plant, chair, window, sofa?","B. chair, window, sofa, plant",B,B,B,,True
+scene0231_00,26,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: plant, pillow, window, microwave?","D. microwave, window, pillow, plant",D,D,D,,True
+scene0231_00,27,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: lamp, microwave, plant, sofa?","A. microwave, lamp, sofa, plant",A,A,A,,True
+scene0231_00,28,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: plant, microwave, lamp, pillow?","C. microwave, lamp, pillow, plant",C,C,C,,True
+scene0231_00,29,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: chair, plant, lamp, pillow?","C. chair, lamp, pillow, plant",C,C,C,,True
+scene0231_00,30,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, refrigerator, plant, sofa?","D. refrigerator, window, sofa, plant",D,D,D,,True
+scene0231_00,31,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: plant, lamp, counter, sofa?","B. counter, lamp, sofa, plant",B,B,B,,True
+scene0231_00,32,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: sofa, plant, refrigerator, lamp?","A. refrigerator, lamp, sofa, plant",A,A,A,,True
+scene0231_00,33,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: refrigerator, pillow, window, plant?","C. refrigerator, window, pillow, plant",C,C,C,,True
+scene0231_00,34,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: plant, lamp, chair, sofa?","D. chair, lamp, sofa, plant",D,D,D,,True
+scene0231_00,35,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: microwave, plant, sofa, window?","A. microwave, window, sofa, plant",A,A,A,,True
+scene0231_00,36,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: pillow, refrigerator, lamp, plant?","B. refrigerator, lamp, pillow, plant",B,B,B,,True
+scene0231_00,37,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: plant, sofa, counter, window?","A. counter, window, sofa, plant",A,A,A,,True
+scene0231_00,38,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: counter, plant, pillow, window?","B. counter, window, pillow, plant",B,B,B,,True
+scene0231_00,39,object_counting,numeric,How many chair(s) are in this room?,10,6,10.0,6.0,4.0,
+scene0231_00,40,object_counting,numeric,How many window(s) are in this room?,3,3,3.0,3.0,0.0,
+scene0231_00,41,object_counting,numeric,How many lamp(s) are in this room?,1,2,1.0,2.0,1.0,
+scene0231_00,42,object_counting,numeric,How many trash bin(s) are in this room?,1,2,1.0,2.0,1.0,
+scene0231_00,43,object_counting,numeric,How many table(s) are in this room?,3,2,3.0,2.0,1.0,
+scene0231_00,44,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the backpack and the refrigerator (in meters)?",5.2 meters,2.3,5.2,2.3,2.9,
+scene0231_00,45,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the refrigerator (in meters)?",6.1 meters,1.0,6.1,1.0,5.1,
+scene0231_00,46,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the backpack and the pillow (in meters)?",4.3 meters,2.2,4.3,2.2,2.1,
+scene0231_00,47,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the microwave and the plant (in meters)?",1.2 meters,4.4,1.2,4.4,3.2,
+scene0231_00,48,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the clock and the backpack (in meters)?",3.2 meters,1.5,3.2,1.5,1.7,
+scene0231_00,49,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the pillow (in meters)?",8.5 meters,3.6,8.5,3.6,4.9,
+scene0231_00,50,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the counter and the sofa (in meters)?",6.4 meters,2.1,6.4,2.1,4.3,
+scene0231_00,51,route_planning,mcq,"You are a robot beginning at the refrigerator, with your back to the fridge. You want to navigate to the trophies on the open shelving. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. Go forward until the kitchen island. 2. [please fill in] 3. Go forward until the chairs. 4. [please fill in] 5. Go forward until past the column. 6. [please fill in] 7. Go forward until the open shelving. You have reached the final destination.","C. Turn Left, Turn Right, Turn Left",D,C,D,,False
