@@ -1,4 +1,144 @@
 scene_name,question_index,question_type,evaluation_type,question,gemini_answer,ground_truth,parsed_prediction,parsed_ground_truth,absolute_error,is_correct
+scene0207_02,1,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (counter, towel, chair, pillow) is the closest to the mirror?",A. counter,B,A,B,,False
+scene0207_02,2,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (monitor, chair, closet, mirror) is the closest to the nightstand?",D. mirror,A,D,A,,False
+scene0207_02,3,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (chair, door, backpack, trash bin) is the closest to the nightstand?",A. chair,A,A,A,,True
+scene0207_02,4,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (refrigerator, mirror, door, radiator) is the closest to the closet?",C. door,B,C,B,,False
+scene0207_02,5,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (printer, chair, closet, door) is the closest to the counter?",A. printer,D,A,D,,False
+scene0207_02,6,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (pillow, refrigerator, nightstand, door) is the closest to the monitor?",C. nightstand,C,C,C,,True
+scene0207_02,7,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (printer, backpack, trash bin, window) is the closest to the monitor?",A. printer,A,A,A,,True
+scene0207_02,8,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (trash bin, nightstand, mirror, monitor) is the closest to the radiator?",B. nightstand,B,B,B,,True
+scene0207_02,9,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (table, refrigerator, printer, backpack) is the closest to the chair?",D. backpack,D,D,D,,True
+scene0207_02,10,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (monitor, towel, backpack, bed) is the closest to the chair?",C. backpack,C,C,C,,True
+scene0207_02,11,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (microwave, backpack, nightstand, closet) is the closest to the counter?",A. microwave,B,A,B,,False
+scene0207_02,12,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (door, refrigerator, chair, table) is the closest to the pillow?",C. chair,D,C,D,,False
+scene0207_02,13,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (radiator, pillow, table, sofa) is the closest to the closet?",D. sofa,C,D,C,,False
+scene0207_02,14,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the bed, measured in centimeters?",190 cm,228,190.0,228.0,38.0,
+scene0207_02,15,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the chair, measured in centimeters?",105 cm,94,105.0,94.0,11.0,
+scene0207_02,16,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",205 cm,200,205.0,200.0,5.0,
+scene0207_02,17,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the counter, measured in centimeters?",240 cm,155,240.0,155.0,85.0,
+scene0207_02,18,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the refrigerator, measured in centimeters?",175 cm,151,175.0,151.0,24.0,
+scene0207_02,19,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the pillow, measured in centimeters?",65 cm,78,65.0,78.0,13.0,
+scene0207_02,20,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the monitor, measured in centimeters?",60 cm,56,60.0,56.0,4.0,
+scene0207_02,21,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the printer, measured in centimeters?",45 cm,40,45.0,40.0,5.0,
+scene0207_02,22,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the nightstand, measured in centimeters?",55 cm,49,55.0,49.0,6.0,
+scene0207_02,23,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the closet, measured in centimeters?",210 cm,219,210.0,219.0,9.0,
+scene0207_02,24,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the microwave, measured in centimeters?",50 cm,46,50.0,46.0,4.0,
+scene0207_02,25,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the mirror, measured in centimeters?",100 cm,113,100.0,113.0,13.0,
+scene0207_02,26,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the radiator, measured in centimeters?",115 cm,95,115.0,95.0,20.0,
+scene0207_02,27,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the trash bin, measured in centimeters?",70 cm,62,70.0,62.0,8.0,
+scene0207_02,28,object_rel_direction_hard,mcq,"If I am standing by the pillow and facing the radiator, is the printer to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",C. front-left,C,C,C,,True
+scene0207_02,29,object_rel_direction_hard,mcq,"If I am standing by the printer and facing the pillow, is the radiator to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",A. back-left,A,A,A,,True
+scene0207_02,30,room_size_estimation,numeric,"What is the size of this room (in square meters)? 
+If multiple rooms are shown, estimate the size of the combined space.",25 square meters,30.2,25.0,30.2,5.2,
+scene0207_02,31,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: nightstand, mirror, table, counter?","D. nightstand, mirror, table, counter",A,D,A,,False
+scene0207_02,32,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: microwave, mirror, printer, chair?","C. printer, chair, microwave, mirror",C,C,C,,True
+scene0207_02,33,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: microwave, nightstand, mirror, closet?","A. nightstand, microwave, closet, mirror",B,A,B,,False
+scene0207_02,34,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, mirror, sofa, microwave?","A. window, mirror, sofa, microwave",D,A,D,,False
+scene0207_02,35,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, trash bin, nightstand, backpack?","B. window, trash bin, nightstand, backpack",A,B,A,,False
+scene0207_02,36,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: pillow, nightstand, door, sofa?","A. pillow, nightstand, door, sofa",D,A,D,,False
+scene0207_02,37,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: nightstand, closet, backpack, towel?","D. nightstand, closet, backpack, towel",A,D,A,,False
+scene0207_02,38,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: nightstand, bed, towel, sofa?","D. nightstand, bed, towel, sofa",C,D,C,,False
+scene0207_02,39,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: chair, table, mirror, towel?","A. chair, table, mirror, towel",B,A,B,,False
+scene0207_02,40,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: mirror, backpack, window, nightstand?","C. mirror, backpack, nightstand, window",D,C,D,,False
+scene0207_02,41,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: refrigerator, mirror, table, nightstand?","C. table, nightstand, mirror, refrigerator",A,C,A,,False
+scene0207_02,42,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: trash bin, printer, mirror, nightstand?","D. nightstand, printer, mirror, trash bin",B,D,B,,False
+scene0207_02,43,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: nightstand, trash bin, chair, window?","A. nightstand, trash bin, window, chair",C,A,C,,False
+scene0207_02,44,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: backpack, nightstand, table, trash bin?","C. table, backpack, nightstand, trash bin",C,C,C,,True
+scene0207_02,45,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: nightstand, closet, backpack, counter?","D. nightstand, closet, backpack, counter",A,D,A,,False
+scene0207_02,46,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: mirror, microwave, backpack, radiator?","A. mirror, microwave, backpack, radiator",B,A,B,,False
+scene0207_02,47,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: towel, bed, nightstand, backpack?","A. bed, towel, nightstand, backpack",D,A,D,,False
+scene0207_02,48,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: towel, pillow, nightstand, backpack?","B. pillow, backpack, towel, nightstand",A,B,A,,False
+scene0207_02,49,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: nightstand, backpack, radiator, mirror?","D. nightstand, backpack, radiator, mirror",B,D,B,,False
+scene0207_02,50,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: door, backpack, mirror, closet?","D. closet, mirror, backpack, door",C,D,C,,False
+scene0207_02,51,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: bed, mirror, refrigerator, nightstand?","C. bed, mirror, refrigerator, nightstand",D,C,D,,False
+scene0207_02,52,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: mirror, printer, refrigerator, sofa?","B. mirror, printer, refrigerator, sofa",D,B,D,,False
+scene0207_02,53,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: chair, window, mirror, nightstand?","D. chair, window, mirror, nightstand",C,D,C,,False
+scene0207_02,54,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: mirror, nightstand, window, sofa?","A. mirror, nightstand, window, sofa",B,A,B,,False
+scene0207_02,55,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, trash bin, sofa, mirror?","C. window, trash bin, sofa, mirror",A,C,A,,False
+scene0207_02,56,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: nightstand, trash bin, backpack, mirror?","A. backpack, nightstand, trash bin, mirror",A,A,A,,True
+scene0207_02,57,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: mirror, refrigerator, bed, chair?","D. bed, mirror, refrigerator, chair",B,D,B,,False
+scene0207_02,58,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: microwave, monitor, backpack, mirror?","C. monitor, microwave, backpack, mirror",D,C,D,,False
+scene0207_02,59,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: trash bin, mirror, backpack, radiator?","A. backpack, mirror, trash bin, radiator",C,A,C,,False
+scene0207_02,60,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: pillow, mirror, chair, trash bin?","D. pillow, mirror, chair, trash bin",B,D,B,,False
+scene0207_02,61,object_rel_direction_medium,mcq,"If I am standing by the closet and facing the radiator, is the trash bin to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",A. left,A,A,A,,True
+scene0207_02,62,object_rel_direction_medium,mcq,"If I am standing by the closet and facing the trash bin, is the radiator to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. right,B,B,B,,True
+scene0207_02,63,object_rel_direction_medium,mcq,"If I am standing by the radiator and facing the closet, is the trash bin to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",C. right,C,C,C,,True
+scene0207_02,64,object_counting,numeric,How many window(s) are in this room?,2,2,2.0,2.0,0.0,
+scene0207_02,65,object_counting,numeric,How many towel(s) are in this room?,1,2,1.0,2.0,1.0,
+scene0207_02,66,object_counting,numeric,How many backpack(s) are in this room?,3,2,3.0,2.0,1.0,
+scene0207_02,67,object_counting,numeric,How many door(s) are in this room?,1,2,1.0,2.0,1.0,
+scene0207_02,68,object_counting,numeric,How many table(s) are in this room?,3,2,3.0,2.0,1.0,
+scene0207_02,69,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the sofa and the bed (in meters)?",4.1 meters,2.1,4.1,2.1,2.0,
+scene0207_02,70,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the microwave and the sofa (in meters)?",1.5 meters,3.6,1.5,3.6,2.1,
+scene0207_02,71,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the mirror and the pillow (in meters)?",3.8 meters,3.5,3.8,3.5,0.3,
+scene0207_02,72,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the printer and the refrigerator (in meters)?",4.5 meters,5.3,4.5,5.3,0.8,
+scene0207_02,73,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the printer and the chair (in meters)?",3.2 meters,0.9,3.2,0.9,2.3,
+scene0207_02,74,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the radiator and the counter (in meters)?",5.6 meters,3.5,5.6,3.5,2.1,
+scene0207_02,75,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the refrigerator and the counter (in meters)?",1.2 meters,0.4,1.2,0.4,0.8,
+scene0207_02,76,route_planning,mcq,"You are a robot beginning at the toilet and facing the toilet. You want to navigate to the refrigerator. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the bathroom sink 3. [please fill in] 4. Go forward until the kitchen counter 5. [please fill in] 6. Go forward until the refrigerator. You have reached the final destination.","C. Turn Back, Turn Left, Turn Right",D,C,D,,False
+scene0222_01,1,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (nightstand, pillow, trash bin, fan) is the closest to the lamp?",D. fan,A,D,A,,False
+scene0222_01,2,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (table, chair, nightstand, refrigerator) is the closest to the radiator?",A. table,A,A,A,,True
+scene0222_01,3,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (nightstand, pillow, trash bin, bed) is the closest to the fan?",C. trash bin,D,C,D,,False
+scene0222_01,4,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (trash bin, fan, door, lamp) is the closest to the radiator?",B. fan,B,B,B,,True
+scene0222_01,5,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (door, lamp, pillow, nightstand) is the closest to the radiator?",B. lamp,C,B,C,,False
+scene0222_01,6,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (table, trash bin, fan, door) is the closest to the radiator?",C. fan,A,C,A,,False
+scene0222_01,7,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (lamp, pillow, table, nightstand) is the closest to the radiator?",C. table,C,C,C,,True
+scene0222_01,8,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (trash bin, chair, lamp, table) is the closest to the radiator?",D. table,D,D,D,,True
+scene0222_01,9,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (nightstand, table, fan, pillow) is the closest to the radiator?",C. fan,B,C,B,,False
+scene0222_01,10,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (fan, trash bin, table, pillow) is the closest to the radiator?",A. fan,C,A,C,,False
+scene0222_01,11,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the lamp, measured in centimeters?",60 cm,72,60.0,72.0,12.0,
+scene0222_01,12,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the nightstand, measured in centimeters?",55 cm,73,55.0,73.0,18.0,
+scene0222_01,13,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the fan, measured in centimeters?",50 cm,71,50.0,71.0,21.0,
+scene0222_01,14,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the radiator, measured in centimeters?",110 cm,63,110.0,63.0,47.0,
+scene0222_01,15,object_rel_direction_hard,mcq,"If I am standing by the lamp and facing the fan, is the radiator to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",A. back-right,D,A,D,,False
+scene0222_01,16,object_rel_direction_hard,mcq,"If I am standing by the lamp and facing the radiator, is the fan to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",B. front-left,C,B,C,,False
+scene0222_01,17,object_rel_direction_hard,mcq,"If I am standing by the fan and facing the lamp, is the radiator to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",D. front-right,A,D,A,,False
+scene0222_01,18,object_rel_direction_hard,mcq,"If I am standing by the lamp and facing the nightstand, is the radiator to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",A. back-left,B,A,B,,False
+scene0222_01,19,object_rel_direction_hard,mcq,"If I am standing by the nightstand and facing the lamp, is the radiator to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",D. front-right,B,D,B,,False
+scene0222_01,20,object_rel_direction_easy,mcq,"If I am standing by the nightstand and facing the fan, is the radiator to the left or the right of the fan?",B. right,A,B,A,,False
+scene0222_01,21,object_rel_direction_easy,mcq,"If I am standing by the nightstand and facing the radiator, is the fan to the left or the right of the radiator?",A. left,B,A,B,,False
+scene0222_01,22,object_rel_direction_easy,mcq,"If I am standing by the fan and facing the nightstand, is the radiator to the left or the right of the nightstand?",A. right,A,A,A,,True
+scene0222_01,23,room_size_estimation,numeric,"What is the size of this room (in square meters)? 
+If multiple rooms are shown, estimate the size of the combined space.",20 square meters,17.5,20.0,17.5,2.5,
+scene0222_01,24,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, radiator, nightstand, table?","C. table, window, nightstand, radiator",C,C,C,,True
+scene0222_01,25,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: radiator, window, nightstand, pillow?","A. pillow, window, nightstand, radiator",A,A,A,,True
+scene0222_01,26,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: chair, radiator, nightstand, window?","D. chair, window, nightstand, radiator",D,D,D,,True
+scene0222_01,27,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: door, window, radiator, nightstand?","B. door, window, radiator, nightstand",A,B,A,,False
+scene0222_01,28,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, bed, radiator, nightstand?","D. bed, window, nightstand, radiator",D,D,D,,True
+scene0222_01,29,object_rel_direction_medium,mcq,"If I am standing by the lamp and facing the fan, is the radiator to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. right,A,B,A,,False
+scene0222_01,30,object_rel_direction_medium,mcq,"If I am standing by the lamp and facing the radiator, is the fan to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",A. left,C,A,C,,False
+scene0222_01,31,object_rel_direction_medium,mcq,"If I am standing by the fan and facing the lamp, is the radiator to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. right,B,B,B,,True
+scene0222_01,32,object_rel_direction_medium,mcq,"If I am standing by the lamp and facing the nightstand, is the radiator to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. left,A,B,A,,False
+scene0222_01,33,object_rel_direction_medium,mcq,"If I am standing by the lamp and facing the radiator, is the nightstand to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",C. right,B,C,B,,False
+scene0222_01,34,object_counting,numeric,How many bed(s) are in this room?,3,2,3.0,2.0,1.0,
+scene0222_01,35,object_counting,numeric,How many chair(s) are in this room?,2,2,2.0,2.0,0.0,
+scene0222_01,36,object_counting,numeric,How many window(s) are in this room?,2,2,2.0,2.0,0.0,
+scene0222_01,37,object_counting,numeric,How many refrigerator(s) are in this room?,1,2,1.0,2.0,1.0,
+scene0222_01,38,object_counting,numeric,How many pillow(s) are in this room?,4,3,4.0,3.0,1.0,
+scene0222_01,39,object_counting,numeric,How many door(s) are in this room?,2,2,2.0,2.0,0.0,
+scene0222_01,40,object_counting,numeric,How many trash bin(s) are in this room?,2,3,2.0,3.0,1.0,
+scene0222_01,41,object_counting,numeric,How many table(s) are in this room?,2,2,2.0,2.0,0.0,
+scene0222_01,42,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the nightstand and the lamp (in meters)?",3.5 meters,0.4,3.5,0.4,3.1,
+scene0222_01,43,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the fan and the lamp (in meters)?",3.8 meters,1.5,3.8,1.5,2.3,
+scene0222_01,44,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the fan and the nightstand (in meters)?",0.6 meters,2.5,0.6,2.5,1.9,
+scene0222_01,45,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the radiator and the lamp (in meters)?",4.2 meters,2.1,4.2,2.1,2.1,
+scene0222_01,46,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the radiator and the nightstand (in meters)?",1.2 meters,3.2,1.2,3.2,2.0,
+scene0222_01,47,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the radiator and the fan (in meters)?",0.4 meters,0.5,0.4,0.5,0.1,
 scene0231_00,1,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (door, counter, clock, plant) is the closest to the backpack?",C. clock,B,C,B,,False
 scene0231_00,2,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (clock, chair, backpack, lamp) is the closest to the pillow?",D. lamp,D,D,D,,True
 scene0231_00,3,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (door, pillow, clock, plant) is the closest to the backpack?",C. clock,A,C,A,,False
@@ -89,3 +229,144 @@ scene0518_00,7,object_counting,numeric,How many table(s) are in this room?,3,2,3
 scene0518_00,8,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the tv and the sofa (in meters)?",2.2 meters,1.5,2.2,1.5,0.7,
 scene0518_00,9,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the backpack and the tv (in meters)?",1.8 meters,1.5,1.8,1.5,0.3,
 scene0518_00,10,route_planning,mcq,"You are a robot beginning at the tv facing the tv. You want to navigate to the table. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the table. You have reached the final destination.",C. Turn Back,A,C,A,,False
+scene0593_00,1,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (window, trash bin, printer, sofa) is the closest to the fan?",B. trash bin,C,B,C,,False
+scene0593_00,2,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (table, window, fan, sofa) is the closest to the door?",D. sofa,D,D,D,,True
+scene0593_00,3,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (fan, backpack, window, trash bin) is the closest to the table?",C. window,B,C,B,,False
+scene0593_00,4,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (trash bin, sofa, backpack, table) is the closest to the printer?",A. trash bin,A,A,A,,True
+scene0593_00,5,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (trash bin, printer, window, door) is the closest to the sofa?",D. door,D,D,D,,True
+scene0593_00,6,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (trash bin, printer, table, door) is the closest to the backpack?",D. door,C,D,C,,False
+scene0593_00,7,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (printer, sofa, backpack, window) is the closest to the fan?",D. window,A,D,A,,False
+scene0593_00,8,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (sofa, window, table, trash bin) is the closest to the printer?",D. trash bin,D,D,D,,True
+scene0593_00,9,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (table, backpack, fan, door) is the closest to the printer?",C. fan,C,C,C,,True
+scene0593_00,10,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (table, window, backpack, door) is the closest to the fan?",B. window,B,B,B,,True
+scene0593_00,11,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (printer, window, table, sofa) is the closest to the fan?",B. window,A,B,A,,False
+scene0593_00,12,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",195 cm,182,195.0,182.0,13.0,
+scene0593_00,13,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the printer, measured in centimeters?",135 cm,54,135.0,54.0,81.0,
+scene0593_00,14,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the backpack, measured in centimeters?",45 cm,54,45.0,54.0,9.0,
+scene0593_00,15,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the fan, measured in centimeters?",110 cm,124,110.0,124.0,14.0,
+scene0593_00,16,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the door, measured in centimeters?",210 cm,152,210.0,152.0,58.0,
+scene0593_00,17,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the table, measured in centimeters?",205 cm,108,205.0,108.0,97.0,
+scene0593_00,18,object_rel_direction_hard,mcq,"If I am standing by the backpack and facing the fan, is the door to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",A. back-left,D,A,D,,False
+scene0593_00,19,object_rel_direction_hard,mcq,"If I am standing by the backpack and facing the door, is the fan to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",B. front-right,C,B,C,,False
+scene0593_00,20,object_rel_direction_hard,mcq,"If I am standing by the fan and facing the backpack, is the door to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",A. front-left,A,A,A,,True
+scene0593_00,21,object_rel_direction_hard,mcq,"If I am standing by the printer and facing the door, is the table to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",B. front-left,D,B,D,,False
+scene0593_00,22,object_rel_direction_hard,mcq,"If I am standing by the printer and facing the table, is the door to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",D. back-right,C,D,C,,False
+scene0593_00,23,object_rel_direction_easy,mcq,"If I am standing by the printer and facing the backpack, is the table to the left or the right of the backpack?",B. right,B,B,B,,True
+scene0593_00,24,object_rel_direction_easy,mcq,"If I am standing by the printer and facing the table, is the backpack to the left or the right of the table?",A. left,A,A,A,,True
+scene0593_00,25,object_rel_direction_easy,mcq,"If I am standing by the backpack and facing the printer, is the table to the left or the right of the printer?",A. left,A,A,A,,True
+scene0593_00,26,room_size_estimation,numeric,"What is the size of this room (in square meters)? 
+If multiple rooms are shown, estimate the size of the combined space.",16 square meters,20.7,16.0,20.7,4.7,
+scene0593_00,27,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: fan, backpack, table, trash bin?","D. table, backpack, fan, trash bin",C,D,C,,False
+scene0593_00,28,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: printer, trash bin, table, backpack?","D. printer, table, trash bin, backpack",A,D,A,,False
+scene0593_00,29,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: backpack, door, table, trash bin?","A. backpack, table, trash bin, door",D,A,D,,False
+scene0593_00,30,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: printer, table, window, sofa?","C. printer, table, window, sofa",D,C,D,,False
+scene0593_00,31,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: printer, trash bin, sofa, table?","C. printer, trash bin, sofa, table",A,C,A,,False
+scene0593_00,32,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: fan, table, sofa, window?","D. fan, table, sofa, window",C,D,C,,False
+scene0593_00,33,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: table, trash bin, fan, sofa?","A. table, trash bin, fan, sofa",B,A,B,,False
+scene0593_00,34,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: fan, table, window, backpack?","B. fan, table, window, backpack",C,B,C,,False
+scene0593_00,35,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: table, door, window, sofa?","C. table, door, window, sofa",A,C,A,,False
+scene0593_00,36,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, backpack, door, table?","C. window, backpack, door, table",B,C,B,,False
+scene0593_00,37,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: table, trash bin, sofa, door?","B. table, trash bin, sofa, door",D,B,D,,False
+scene0593_00,38,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: table, window, backpack, printer?","B. table, window, backpack, printer",C,B,C,,False
+scene0593_00,39,object_rel_direction_medium,mcq,"If I am standing by the backpack and facing the fan, is the door to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",C. left,A,C,A,,False
+scene0593_00,40,object_rel_direction_medium,mcq,"If I am standing by the backpack and facing the door, is the fan to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",C. right,B,C,B,,False
+scene0593_00,41,object_rel_direction_medium,mcq,"If I am standing by the fan and facing the backpack, is the door to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",A. left,A,A,A,,True
+scene0593_00,42,object_rel_direction_medium,mcq,"If I am standing by the fan and facing the door, is the table to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. right,B,B,B,,True
+scene0593_00,43,object_rel_direction_medium,mcq,"If I am standing by the fan and facing the table, is the door to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",C. left,C,C,C,,True
+scene0593_00,44,object_rel_direction_medium,mcq,"If I am standing by the door and facing the fan, is the table to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",C. left,C,C,C,,True
+scene0593_00,45,object_counting,numeric,How many window(s) are in this room?,1,2,1.0,2.0,1.0,
+scene0593_00,46,object_counting,numeric,How many trash bin(s) are in this room?,3,2,3.0,2.0,1.0,
+scene0593_00,47,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the table and the door (in meters)?",3.5 meters,2.6,3.5,2.6,0.9,
+scene0593_00,48,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the fan (in meters)?",4.2 meters,2.4,4.2,2.4,1.8,
+scene0593_00,49,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the fan and the sofa (in meters)?",2.8 meters,2.5,2.8,2.5,0.3,
+scene0593_00,50,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the table and the printer (in meters)?",3.1 meters,4.3,3.1,4.3,1.2,
+scene0593_00,51,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the backpack and the printer (in meters)?",6.2 meters,3.4,6.2,3.4,2.8,
+scene0593_00,52,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the door and the printer (in meters)?",5.4 meters,3.0,5.4,3.0,2.4,
+scene0593_00,53,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the table and the fan (in meters)?",1.2 meters,3.4,1.2,3.4,2.2,
+scene0593_00,54,route_planning,mcq,"You are a robot beginning at the sofa and facing the wall behind the sofa. You want to navigate to the printer. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the paper disposal bin. 3. [please fill in] 4. Go forward until the electric fan. 5. [please fill in] 6. Go forward until the printer. You have reached the final destination.","C. Turn Left, Turn Right, Turn Left",B,C,B,,False
+scene0697_01,1,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (mirror, window, lamp, trash bin) is the closest to the closet?",D. trash bin,D,D,D,,True
+scene0697_01,2,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (lamp, window, pillow, tv) is the closest to the mirror?",D. tv,C,D,C,,False
+scene0697_01,3,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (lamp, window, pillow, nightstand) is the closest to the closet?",B. window,D,B,D,,False
+scene0697_01,4,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (closet, bed, trash bin, mirror) is the closest to the tv?",D. mirror,B,D,B,,False
+scene0697_01,5,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (window, tv, nightstand, lamp) is the closest to the mirror?",B. tv,C,B,C,,False
+scene0697_01,6,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (bed, tv, lamp, mirror) is the closest to the closet?",D. mirror,A,D,A,,False
+scene0697_01,7,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (lamp, trash bin, bed, mirror) is the closest to the tv?",D. mirror,C,D,C,,False
+scene0697_01,8,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (window, trash bin, mirror, pillow) is the closest to the closet?",B. trash bin,B,B,B,,True
+scene0697_01,9,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (bed, tv, pillow, window) is the closest to the closet?",D. window,A,D,A,,False
+scene0697_01,10,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (nightstand, lamp, closet, bed) is the closest to the trash bin?",C. closet,D,C,D,,False
+scene0697_01,11,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (lamp, bed, tv, window) is the closest to the closet?",D. window,B,D,B,,False
+scene0697_01,12,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (closet, window, mirror, tv) is the closest to the trash bin?",A. closet,C,A,C,,False
+scene0697_01,13,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (trash bin, pillow, lamp, window) is the closest to the mirror?",A. trash bin,A,A,A,,True
+scene0697_01,14,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (mirror, trash bin, pillow, nightstand) is the closest to the closet?",B. trash bin,D,B,D,,False
+scene0697_01,15,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (tv, nightstand, trash bin, window) is the closest to the mirror?",A. tv,C,A,C,,False
+scene0697_01,16,object_rel_distance,mcq,"Measuring from the closest point of each object, which of these objects (nightstand, trash bin, pillow, closet) is the closest to the mirror?",D. closet,B,D,B,,False
+scene0697_01,17,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the lamp, measured in centimeters?",60 cm,63,60.0,63.0,3.0,
+scene0697_01,18,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the tv, measured in centimeters?",95 cm,96,95.0,96.0,1.0,
+scene0697_01,19,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the mirror, measured in centimeters?",120 cm,120,120.0,120.0,0.0,
+scene0697_01,20,object_size_estimation,numeric,"What is the length of the longest dimension (length, width, or height) of the trash bin, measured in centimeters?",40 cm,26,40.0,26.0,14.0,
+scene0697_01,21,object_rel_direction_hard,mcq,"If I am standing by the lamp and facing the closet, is the mirror to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",C. front-left,D,C,D,,False
+scene0697_01,22,object_rel_direction_hard,mcq,"If I am standing by the lamp and facing the mirror, is the closet to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",B. front-right,A,B,A,,False
+scene0697_01,23,object_rel_direction_hard,mcq,"If I am standing by the tv and facing the closet, is the trash bin to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",B. back-right,C,B,C,,False
+scene0697_01,24,object_rel_direction_hard,mcq,"If I am standing by the tv and facing the trash bin, is the closet to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",D. front-left,D,D,D,,True
+scene0697_01,25,object_rel_direction_hard,mcq,"If I am standing by the closet and facing the tv, is the trash bin to my front-left, front-right, back-left, or back-right?
+The directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",B. front-left,B,B,B,,True
+scene0697_01,26,object_rel_direction_easy,mcq,"If I am standing by the lamp and facing the closet, is the trash bin to the left or the right of the closet?",A. left,B,A,B,,False
+scene0697_01,27,object_rel_direction_easy,mcq,"If I am standing by the lamp and facing the trash bin, is the closet to the left or the right of the trash bin?",B. right,A,B,A,,False
+scene0697_01,28,object_rel_direction_easy,mcq,"If I am standing by the closet and facing the lamp, is the trash bin to the left or the right of the lamp?",A. right,B,A,B,,False
+scene0697_01,29,room_size_estimation,numeric,"What is the size of this room (in square meters)? 
+If multiple rooms are shown, estimate the size of the combined space.",15 square meters,16.0,15.0,16.0,1.0,
+scene0697_01,30,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: tv, bed, window, trash bin?","D. tv, window, bed, trash bin",C,D,C,,False
+scene0697_01,31,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: lamp, nightstand, mirror, tv?","D. lamp, nightstand, mirror, tv",A,D,A,,False
+scene0697_01,32,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, tv, closet, trash bin?","A. window, tv, closet, trash bin",D,A,D,,False
+scene0697_01,33,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: lamp, trash bin, tv, nightstand?","A. lamp, nightstand, trash bin, tv",B,A,B,,False
+scene0697_01,34,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, pillow, tv, mirror?","B. window, pillow, tv, mirror",D,B,D,,False
+scene0697_01,35,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: tv, window, mirror, nightstand?","C. tv, window, mirror, nightstand",A,C,A,,False
+scene0697_01,36,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, tv, pillow, trash bin?","D. window, tv, pillow, trash bin",B,D,B,,False
+scene0697_01,37,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: window, mirror, tv, closet?","A. window, mirror, tv, closet",C,A,C,,False
+scene0697_01,38,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: mirror, tv, window, bed?","B. mirror, tv, window, bed",A,B,A,,False
+scene0697_01,39,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: trash bin, window, tv, nightstand?","D. trash bin, window, tv, nightstand",C,D,C,,False
+scene0697_01,40,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: bed, tv, mirror, lamp?","D. bed, tv, mirror, lamp",B,D,B,,False
+scene0697_01,41,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: lamp, closet, tv, trash bin?","C. lamp, closet, tv, trash bin",D,C,D,,False
+scene0697_01,42,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: pillow, tv, lamp, trash bin?","B. pillow, tv, lamp, trash bin",A,B,A,,False
+scene0697_01,43,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: lamp, tv, closet, mirror?","B. lamp, tv, closet, mirror",C,B,C,,False
+scene0697_01,44,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: bed, trash bin, lamp, tv?","C. bed, trash bin, lamp, tv",D,C,D,,False
+scene0697_01,45,obj_appearance_order,mcq,"What will be the first-time appearance order of the following categories in the video: tv, lamp, mirror, pillow?","D. tv, lamp, mirror, pillow",B,D,B,,False
+scene0697_01,46,object_rel_direction_medium,mcq,"If I am standing by the closet and facing the mirror, is the trash bin to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",C. left,A,C,A,,False
+scene0697_01,47,object_rel_direction_medium,mcq,"If I am standing by the closet and facing the trash bin, is the mirror to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",A. right,C,A,C,,False
+scene0697_01,48,object_rel_direction_medium,mcq,"If I am standing by the mirror and facing the closet, is the trash bin to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. left,B,B,B,,True
+scene0697_01,49,object_rel_direction_medium,mcq,"If I am standing by the tv and facing the closet, is the mirror to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. back,C,B,C,,False
+scene0697_01,50,object_rel_direction_medium,mcq,"If I am standing by the tv and facing the mirror, is the closet to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",B. back,A,B,A,,False
+scene0697_01,51,object_rel_direction_medium,mcq,"If I am standing by the closet and facing the tv, is the mirror to my left, right, or back?
+An object is to my back if I would have to turn at least 135 degrees in order to face it.",A. back,B,A,B,,False
+scene0697_01,52,object_counting,numeric,How many bed(s) are in this room?,2,2,2.0,2.0,0.0,
+scene0697_01,53,object_counting,numeric,How many window(s) are in this room?,1,2,1.0,2.0,1.0,
+scene0697_01,54,object_counting,numeric,How many pillow(s) are in this room?,4,3,4.0,3.0,1.0,
+scene0697_01,55,object_counting,numeric,How many nightstand(s) are in this room?,2,2,2.0,2.0,0.0,
+scene0697_01,56,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the trash bin and the tv (in meters)?",2.8 meters,3.0,2.8,3.0,0.2,
+scene0697_01,57,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the trash bin and the closet (in meters)?",0.4 meters,0.9,0.4,0.9,0.5,
+scene0697_01,58,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the closet and the lamp (in meters)?",3.5 meters,2.5,3.5,2.5,1.0,
+scene0697_01,59,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the trash bin and the mirror (in meters)?",2.4 meters,0.7,2.4,0.7,1.7,
+scene0697_01,60,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the mirror and the lamp (in meters)?",2.8 meters,2.9,2.8,2.9,0.1,
+scene0697_01,61,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the closet and the tv (in meters)?",3.2 meters,3.5,3.2,3.5,0.3,
+scene0697_01,62,object_abs_distance,numeric,"Measuring from the closest point of each object, what is the distance between the mirror and the closet (in meters)?",2.6 meters,1.3,2.6,1.3,1.3,
+scene0697_01,63,route_planning,mcq,"You are a robot beginning at the dollhouse nearby the window and facing the window. You want to navigate to the hanging picture. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the cabinet with a mirror on top of that. 3. [please fill in] 4. Go forward until the hanging picture. You have reached the final destination.","B. Turn Back, Turn Right",B,B,B,,True

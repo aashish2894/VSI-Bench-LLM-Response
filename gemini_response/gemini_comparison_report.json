@@ -1,11 +1,1397 @@
 {
-  "response_dir": "gemini_response",
-  "ground_truth_dir": "scannet_questions",
+  "response_dir": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response",
+  "ground_truth_dir": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports",
   "scene_reports": [
     {
+      "scene_name": "scene0207_02",
+      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0207_02_gemini_response.json",
+      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0207_02_questions.json",
+      "summary": {
+        "num_questions": 76,
+        "num_numeric_questions": 27,
+        "num_mcq_questions": 49,
+        "numeric_mean_absolute_error": 9.8,
+        "numeric_median_absolute_error": 4.0,
+        "numeric_max_absolute_error": 85.0,
+        "numeric_num_exact_matches": 1,
+        "mcq_num_correct": 14,
+        "mcq_accuracy": 0.2857,
+        "per_question_type": {
+          "obj_appearance_order": {
+            "num_questions": 30,
+            "evaluation_type": "mcq",
+            "num_correct": 3,
+            "accuracy": 0.1
+          },
+          "object_abs_distance": {
+            "num_questions": 7,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 1.4857,
+            "max_absolute_error": 2.3
+          },
+          "object_counting": {
+            "num_questions": 5,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.8,
+            "max_absolute_error": 1.0
+          },
+          "object_rel_direction_hard": {
+            "num_questions": 2,
+            "evaluation_type": "mcq",
+            "num_correct": 2,
+            "accuracy": 1.0
+          },
+          "object_rel_direction_medium": {
+            "num_questions": 3,
+            "evaluation_type": "mcq",
+            "num_correct": 3,
+            "accuracy": 1.0
+          },
+          "object_rel_distance": {
+            "num_questions": 13,
+            "evaluation_type": "mcq",
+            "num_correct": 6,
+            "accuracy": 0.4615
+          },
+          "object_size_estimation": {
+            "num_questions": 14,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 17.5,
+            "max_absolute_error": 85.0
+          },
+          "room_size_estimation": {
+            "num_questions": 1,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 5.2,
+            "max_absolute_error": 5.2
+          },
+          "route_planning": {
+            "num_questions": 1,
+            "evaluation_type": "mcq",
+            "num_correct": 0,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "question_results": [
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (counter, towel, chair, pillow) is the closest to the mirror?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. counter",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (monitor, chair, closet, mirror) is the closest to the nightstand?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. mirror",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (chair, door, backpack, trash bin) is the closest to the nightstand?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. chair",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (refrigerator, mirror, door, radiator) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. door",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (printer, chair, closet, door) is the closest to the counter?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. printer",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (pillow, refrigerator, nightstand, door) is the closest to the monitor?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. nightstand",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (printer, backpack, trash bin, window) is the closest to the monitor?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. printer",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (trash bin, nightstand, mirror, monitor) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. nightstand",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (table, refrigerator, printer, backpack) is the closest to the chair?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. backpack",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (monitor, towel, backpack, bed) is the closest to the chair?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. backpack",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (microwave, backpack, nightstand, closet) is the closest to the counter?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. microwave",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (door, refrigerator, chair, table) is the closest to the pillow?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. chair",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (radiator, pillow, table, sofa) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. sofa",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the bed, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "190 cm",
+          "ground_truth": "228",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 190.0,
+          "parsed_ground_truth": 228.0,
+          "absolute_error": 38.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the chair, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "105 cm",
+          "ground_truth": "94",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 105.0,
+          "parsed_ground_truth": 94.0,
+          "absolute_error": 11.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "205 cm",
+          "ground_truth": "200",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 205.0,
+          "parsed_ground_truth": 200.0,
+          "absolute_error": 5.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the counter, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "240 cm",
+          "ground_truth": "155",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 240.0,
+          "parsed_ground_truth": 155.0,
+          "absolute_error": 85.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the refrigerator, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "175 cm",
+          "ground_truth": "151",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 175.0,
+          "parsed_ground_truth": 151.0,
+          "absolute_error": 24.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the pillow, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "65 cm",
+          "ground_truth": "78",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 65.0,
+          "parsed_ground_truth": 78.0,
+          "absolute_error": 13.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the monitor, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "60 cm",
+          "ground_truth": "56",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 60.0,
+          "parsed_ground_truth": 56.0,
+          "absolute_error": 4.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the printer, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "45 cm",
+          "ground_truth": "40",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 45.0,
+          "parsed_ground_truth": 40.0,
+          "absolute_error": 5.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the nightstand, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "55 cm",
+          "ground_truth": "49",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 55.0,
+          "parsed_ground_truth": 49.0,
+          "absolute_error": 6.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the closet, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "210 cm",
+          "ground_truth": "219",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 210.0,
+          "parsed_ground_truth": 219.0,
+          "absolute_error": 9.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the microwave, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "50 cm",
+          "ground_truth": "46",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 50.0,
+          "parsed_ground_truth": 46.0,
+          "absolute_error": 4.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the mirror, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "100 cm",
+          "ground_truth": "113",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 100.0,
+          "parsed_ground_truth": 113.0,
+          "absolute_error": 13.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the radiator, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "115 cm",
+          "ground_truth": "95",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 115.0,
+          "parsed_ground_truth": 95.0,
+          "absolute_error": 20.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the trash bin, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "70 cm",
+          "ground_truth": "62",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 70.0,
+          "parsed_ground_truth": 62.0,
+          "absolute_error": 8.0
+        },
+        {
+          "question": "If I am standing by the pillow and facing the radiator, is the printer to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "C. front-left",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the printer and facing the pillow, is the radiator to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "A. back-left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "What is the size of this room (in square meters)? \nIf multiple rooms are shown, estimate the size of the combined space.",
+          "question_type": "room_size_estimation",
+          "gemini_answer": "25 square meters",
+          "ground_truth": "30.2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 25.0,
+          "parsed_ground_truth": 30.2,
+          "absolute_error": 5.2
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: nightstand, mirror, table, counter?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. nightstand, mirror, table, counter",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: microwave, mirror, printer, chair?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. printer, chair, microwave, mirror",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: microwave, nightstand, mirror, closet?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. nightstand, microwave, closet, mirror",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, mirror, sofa, microwave?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. window, mirror, sofa, microwave",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, trash bin, nightstand, backpack?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. window, trash bin, nightstand, backpack",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: pillow, nightstand, door, sofa?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. pillow, nightstand, door, sofa",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: nightstand, closet, backpack, towel?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. nightstand, closet, backpack, towel",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: nightstand, bed, towel, sofa?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. nightstand, bed, towel, sofa",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: chair, table, mirror, towel?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. chair, table, mirror, towel",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: mirror, backpack, window, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. mirror, backpack, nightstand, window",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: refrigerator, mirror, table, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. table, nightstand, mirror, refrigerator",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: trash bin, printer, mirror, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. nightstand, printer, mirror, trash bin",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: nightstand, trash bin, chair, window?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. nightstand, trash bin, window, chair",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: backpack, nightstand, table, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. table, backpack, nightstand, trash bin",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: nightstand, closet, backpack, counter?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. nightstand, closet, backpack, counter",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: mirror, microwave, backpack, radiator?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. mirror, microwave, backpack, radiator",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: towel, bed, nightstand, backpack?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. bed, towel, nightstand, backpack",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: towel, pillow, nightstand, backpack?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. pillow, backpack, towel, nightstand",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: nightstand, backpack, radiator, mirror?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. nightstand, backpack, radiator, mirror",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: door, backpack, mirror, closet?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. closet, mirror, backpack, door",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: bed, mirror, refrigerator, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. bed, mirror, refrigerator, nightstand",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: mirror, printer, refrigerator, sofa?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. mirror, printer, refrigerator, sofa",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: chair, window, mirror, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. chair, window, mirror, nightstand",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: mirror, nightstand, window, sofa?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. mirror, nightstand, window, sofa",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, trash bin, sofa, mirror?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. window, trash bin, sofa, mirror",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: nightstand, trash bin, backpack, mirror?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. backpack, nightstand, trash bin, mirror",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: mirror, refrigerator, bed, chair?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. bed, mirror, refrigerator, chair",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: microwave, monitor, backpack, mirror?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. monitor, microwave, backpack, mirror",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: trash bin, mirror, backpack, radiator?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. backpack, mirror, trash bin, radiator",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: pillow, mirror, chair, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. pillow, mirror, chair, trash bin",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the closet and facing the radiator, is the trash bin to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "A. left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the closet and facing the trash bin, is the radiator to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the radiator and facing the closet, is the trash bin to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "C. right",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "How many window(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "How many towel(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "1",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many backpack(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "3",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many door(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "1",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many table(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "3",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the sofa and the bed (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "4.1 meters",
+          "ground_truth": "2.1",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.1,
+          "parsed_ground_truth": 2.1,
+          "absolute_error": 2.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the microwave and the sofa (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "1.5 meters",
+          "ground_truth": "3.6",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.5,
+          "parsed_ground_truth": 3.6,
+          "absolute_error": 2.1
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the mirror and the pillow (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.8 meters",
+          "ground_truth": "3.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.8,
+          "parsed_ground_truth": 3.5,
+          "absolute_error": 0.3
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the printer and the refrigerator (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "4.5 meters",
+          "ground_truth": "5.3",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.5,
+          "parsed_ground_truth": 5.3,
+          "absolute_error": 0.8
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the printer and the chair (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.2 meters",
+          "ground_truth": "0.9",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.2,
+          "parsed_ground_truth": 0.9,
+          "absolute_error": 2.3
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the radiator and the counter (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "5.6 meters",
+          "ground_truth": "3.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 5.6,
+          "parsed_ground_truth": 3.5,
+          "absolute_error": 2.1
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the refrigerator and the counter (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "1.2 meters",
+          "ground_truth": "0.4",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.2,
+          "parsed_ground_truth": 0.4,
+          "absolute_error": 0.8
+        },
+        {
+          "question": "You are a robot beginning at the toilet and facing the toilet. You want to navigate to the refrigerator. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the bathroom sink 3. [please fill in] 4. Go forward until the kitchen counter 5. [please fill in] 6. Go forward until the refrigerator. You have reached the final destination.",
+          "question_type": "route_planning",
+          "gemini_answer": "C. Turn Back, Turn Left, Turn Right",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        }
+      ],
+      "num_unmatched_response_questions": 0,
+      "num_missing_response_questions": 0,
+      "unmatched_response_questions": [],
+      "missing_response_questions": []
+    },
+    {
+      "scene_name": "scene0222_01",
+      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0222_01_gemini_response.json",
+      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0222_01_questions.json",
+      "summary": {
+        "num_questions": 47,
+        "num_numeric_questions": 19,
+        "num_mcq_questions": 28,
+        "numeric_mean_absolute_error": 6.1053,
+        "numeric_median_absolute_error": 1.9,
+        "numeric_max_absolute_error": 47.0,
+        "numeric_num_exact_matches": 4,
+        "mcq_num_correct": 10,
+        "mcq_accuracy": 0.3571,
+        "per_question_type": {
+          "obj_appearance_order": {
+            "num_questions": 5,
+            "evaluation_type": "mcq",
+            "num_correct": 4,
+            "accuracy": 0.8
+          },
+          "object_abs_distance": {
+            "num_questions": 6,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 1.9167,
+            "max_absolute_error": 3.1
+          },
+          "object_counting": {
+            "num_questions": 8,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.5,
+            "max_absolute_error": 1.0
+          },
+          "object_rel_direction_easy": {
+            "num_questions": 3,
+            "evaluation_type": "mcq",
+            "num_correct": 1,
+            "accuracy": 0.3333
+          },
+          "object_rel_direction_hard": {
+            "num_questions": 5,
+            "evaluation_type": "mcq",
+            "num_correct": 0,
+            "accuracy": 0.0
+          },
+          "object_rel_direction_medium": {
+            "num_questions": 5,
+            "evaluation_type": "mcq",
+            "num_correct": 1,
+            "accuracy": 0.2
+          },
+          "object_rel_distance": {
+            "num_questions": 10,
+            "evaluation_type": "mcq",
+            "num_correct": 4,
+            "accuracy": 0.4
+          },
+          "object_size_estimation": {
+            "num_questions": 4,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 24.5,
+            "max_absolute_error": 47.0
+          },
+          "room_size_estimation": {
+            "num_questions": 1,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 2.5,
+            "max_absolute_error": 2.5
+          }
+        }
+      },
+      "question_results": [
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (nightstand, pillow, trash bin, fan) is the closest to the lamp?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. fan",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (table, chair, nightstand, refrigerator) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. table",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (nightstand, pillow, trash bin, bed) is the closest to the fan?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. trash bin",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (trash bin, fan, door, lamp) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. fan",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (door, lamp, pillow, nightstand) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. lamp",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (table, trash bin, fan, door) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. fan",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (lamp, pillow, table, nightstand) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. table",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (trash bin, chair, lamp, table) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. table",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (nightstand, table, fan, pillow) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. fan",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (fan, trash bin, table, pillow) is the closest to the radiator?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. fan",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the lamp, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "60 cm",
+          "ground_truth": "72",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 60.0,
+          "parsed_ground_truth": 72.0,
+          "absolute_error": 12.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the nightstand, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "55 cm",
+          "ground_truth": "73",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 55.0,
+          "parsed_ground_truth": 73.0,
+          "absolute_error": 18.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the fan, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "50 cm",
+          "ground_truth": "71",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 50.0,
+          "parsed_ground_truth": 71.0,
+          "absolute_error": 21.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the radiator, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "110 cm",
+          "ground_truth": "63",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 110.0,
+          "parsed_ground_truth": 63.0,
+          "absolute_error": 47.0
+        },
+        {
+          "question": "If I am standing by the lamp and facing the fan, is the radiator to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "A. back-right",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the lamp and facing the radiator, is the fan to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "B. front-left",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the fan and facing the lamp, is the radiator to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "D. front-right",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the lamp and facing the nightstand, is the radiator to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "A. back-left",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the nightstand and facing the lamp, is the radiator to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "D. front-right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the nightstand and facing the fan, is the radiator to the left or the right of the fan?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "B. right",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the nightstand and facing the radiator, is the fan to the left or the right of the radiator?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "A. left",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the fan and facing the nightstand, is the radiator to the left or the right of the nightstand?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "A. right",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "What is the size of this room (in square meters)? \nIf multiple rooms are shown, estimate the size of the combined space.",
+          "question_type": "room_size_estimation",
+          "gemini_answer": "20 square meters",
+          "ground_truth": "17.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 20.0,
+          "parsed_ground_truth": 17.5,
+          "absolute_error": 2.5
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, radiator, nightstand, table?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. table, window, nightstand, radiator",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: radiator, window, nightstand, pillow?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. pillow, window, nightstand, radiator",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: chair, radiator, nightstand, window?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. chair, window, nightstand, radiator",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: door, window, radiator, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. door, window, radiator, nightstand",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, bed, radiator, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. bed, window, nightstand, radiator",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the lamp and facing the fan, is the radiator to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. right",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the lamp and facing the radiator, is the fan to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "A. left",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the fan and facing the lamp, is the radiator to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the lamp and facing the nightstand, is the radiator to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the lamp and facing the radiator, is the nightstand to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "C. right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "How many bed(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "3",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many chair(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "How many window(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "How many refrigerator(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "1",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many pillow(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "4",
+          "ground_truth": "3",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.0,
+          "parsed_ground_truth": 3.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many door(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "How many trash bin(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "3",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 3.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many table(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the nightstand and the lamp (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.5 meters",
+          "ground_truth": "0.4",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.5,
+          "parsed_ground_truth": 0.4,
+          "absolute_error": 3.1
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the fan and the lamp (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.8 meters",
+          "ground_truth": "1.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.8,
+          "parsed_ground_truth": 1.5,
+          "absolute_error": 2.3
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the fan and the nightstand (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "0.6 meters",
+          "ground_truth": "2.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 0.6,
+          "parsed_ground_truth": 2.5,
+          "absolute_error": 1.9
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the radiator and the lamp (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "4.2 meters",
+          "ground_truth": "2.1",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.2,
+          "parsed_ground_truth": 2.1,
+          "absolute_error": 2.1
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the radiator and the nightstand (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "1.2 meters",
+          "ground_truth": "3.2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.2,
+          "parsed_ground_truth": 3.2,
+          "absolute_error": 2.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the radiator and the fan (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "0.4 meters",
+          "ground_truth": "0.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 0.4,
+          "parsed_ground_truth": 0.5,
+          "absolute_error": 0.1
+        }
+      ],
+      "num_unmatched_response_questions": 0,
+      "num_missing_response_questions": 0,
+      "unmatched_response_questions": [],
+      "missing_response_questions": []
+    },
+    {
       "scene_name": "scene0231_00",
-      "response_file": "gemini_response/scene0231_00_gemini_response.json",
-      "ground_truth_file": "scannet_questions/scene0231_00_questions.json",
+      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0231_00_gemini_response.json",
+      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0231_00_questions.json",
       "summary": {
         "num_questions": 51,
         "num_numeric_questions": 22,
@@ -586,8 +1972,8 @@
     },
     {
       "scene_name": "scene0277_02",
-      "response_file": "gemini_response/scene0277_02_gemini_response.json",
-      "ground_truth_file": "scannet_questions/scene0277_02_questions.json",
+      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0277_02_gemini_response.json",
+      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0277_02_questions.json",
       "summary": {
         "num_questions": 20,
         "num_numeric_questions": 15,
@@ -846,8 +2232,8 @@
     },
     {
       "scene_name": "scene0518_00",
-      "response_file": "gemini_response/scene0518_00_gemini_response.json",
-      "ground_truth_file": "scannet_questions/scene0518_00_questions.json",
+      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0518_00_gemini_response.json",
+      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0518_00_questions.json",
       "summary": {
         "num_questions": 10,
         "num_numeric_questions": 9,
@@ -997,16 +2383,1354 @@
       "num_missing_response_questions": 0,
       "unmatched_response_questions": [],
       "missing_response_questions": []
+    },
+    {
+      "scene_name": "scene0593_00",
+      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0593_00_gemini_response.json",
+      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0593_00_questions.json",
+      "summary": {
+        "num_questions": 54,
+        "num_numeric_questions": 16,
+        "num_mcq_questions": 38,
+        "numeric_mean_absolute_error": 18.1438,
+        "numeric_median_absolute_error": 2.6,
+        "numeric_max_absolute_error": 97.0,
+        "numeric_num_exact_matches": 0,
+        "mcq_num_correct": 14,
+        "mcq_accuracy": 0.3684,
+        "per_question_type": {
+          "obj_appearance_order": {
+            "num_questions": 12,
+            "evaluation_type": "mcq",
+            "num_correct": 0,
+            "accuracy": 0.0
+          },
+          "object_abs_distance": {
+            "num_questions": 7,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 1.6571,
+            "max_absolute_error": 2.8
+          },
+          "object_counting": {
+            "num_questions": 2,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 1.0,
+            "max_absolute_error": 1.0
+          },
+          "object_rel_direction_easy": {
+            "num_questions": 3,
+            "evaluation_type": "mcq",
+            "num_correct": 3,
+            "accuracy": 1.0
+          },
+          "object_rel_direction_hard": {
+            "num_questions": 5,
+            "evaluation_type": "mcq",
+            "num_correct": 1,
+            "accuracy": 0.2
+          },
+          "object_rel_direction_medium": {
+            "num_questions": 6,
+            "evaluation_type": "mcq",
+            "num_correct": 4,
+            "accuracy": 0.6667
+          },
+          "object_rel_distance": {
+            "num_questions": 11,
+            "evaluation_type": "mcq",
+            "num_correct": 6,
+            "accuracy": 0.5455
+          },
+          "object_size_estimation": {
+            "num_questions": 6,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 45.3333,
+            "max_absolute_error": 97.0
+          },
+          "room_size_estimation": {
+            "num_questions": 1,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 4.7,
+            "max_absolute_error": 4.7
+          },
+          "route_planning": {
+            "num_questions": 1,
+            "evaluation_type": "mcq",
+            "num_correct": 0,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "question_results": [
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (window, trash bin, printer, sofa) is the closest to the fan?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. trash bin",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (table, window, fan, sofa) is the closest to the door?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. sofa",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (fan, backpack, window, trash bin) is the closest to the table?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. window",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (trash bin, sofa, backpack, table) is the closest to the printer?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. trash bin",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (trash bin, printer, window, door) is the closest to the sofa?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. door",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (trash bin, printer, table, door) is the closest to the backpack?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. door",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (printer, sofa, backpack, window) is the closest to the fan?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. window",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (sofa, window, table, trash bin) is the closest to the printer?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. trash bin",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (table, backpack, fan, door) is the closest to the printer?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. fan",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (table, window, backpack, door) is the closest to the fan?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. window",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (printer, window, table, sofa) is the closest to the fan?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. window",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the sofa, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "195 cm",
+          "ground_truth": "182",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 195.0,
+          "parsed_ground_truth": 182.0,
+          "absolute_error": 13.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the printer, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "135 cm",
+          "ground_truth": "54",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 135.0,
+          "parsed_ground_truth": 54.0,
+          "absolute_error": 81.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the backpack, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "45 cm",
+          "ground_truth": "54",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 45.0,
+          "parsed_ground_truth": 54.0,
+          "absolute_error": 9.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the fan, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "110 cm",
+          "ground_truth": "124",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 110.0,
+          "parsed_ground_truth": 124.0,
+          "absolute_error": 14.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the door, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "210 cm",
+          "ground_truth": "152",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 210.0,
+          "parsed_ground_truth": 152.0,
+          "absolute_error": 58.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the table, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "205 cm",
+          "ground_truth": "108",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 205.0,
+          "parsed_ground_truth": 108.0,
+          "absolute_error": 97.0
+        },
+        {
+          "question": "If I am standing by the backpack and facing the fan, is the door to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "A. back-left",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the backpack and facing the door, is the fan to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "B. front-right",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the fan and facing the backpack, is the door to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "A. front-left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the printer and facing the door, is the table to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "B. front-left",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the printer and facing the table, is the door to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "D. back-right",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the printer and facing the backpack, is the table to the left or the right of the backpack?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "B. right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the printer and facing the table, is the backpack to the left or the right of the table?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "A. left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the backpack and facing the printer, is the table to the left or the right of the printer?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "A. left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "What is the size of this room (in square meters)? \nIf multiple rooms are shown, estimate the size of the combined space.",
+          "question_type": "room_size_estimation",
+          "gemini_answer": "16 square meters",
+          "ground_truth": "20.7",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 16.0,
+          "parsed_ground_truth": 20.7,
+          "absolute_error": 4.7
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: fan, backpack, table, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. table, backpack, fan, trash bin",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: printer, trash bin, table, backpack?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. printer, table, trash bin, backpack",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: backpack, door, table, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. backpack, table, trash bin, door",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: printer, table, window, sofa?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. printer, table, window, sofa",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: printer, trash bin, sofa, table?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. printer, trash bin, sofa, table",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: fan, table, sofa, window?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. fan, table, sofa, window",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: table, trash bin, fan, sofa?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. table, trash bin, fan, sofa",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: fan, table, window, backpack?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. fan, table, window, backpack",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: table, door, window, sofa?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. table, door, window, sofa",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, backpack, door, table?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. window, backpack, door, table",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: table, trash bin, sofa, door?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. table, trash bin, sofa, door",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: table, window, backpack, printer?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. table, window, backpack, printer",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the backpack and facing the fan, is the door to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "C. left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the backpack and facing the door, is the fan to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "C. right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the fan and facing the backpack, is the door to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "A. left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the fan and facing the door, is the table to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the fan and facing the table, is the door to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "C. left",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the door and facing the fan, is the table to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "C. left",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "C",
+          "is_correct": true
+        },
+        {
+          "question": "How many window(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "1",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many trash bin(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "3",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the table and the door (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.5 meters",
+          "ground_truth": "2.6",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.5,
+          "parsed_ground_truth": 2.6,
+          "absolute_error": 0.9
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the door and the fan (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "4.2 meters",
+          "ground_truth": "2.4",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.2,
+          "parsed_ground_truth": 2.4,
+          "absolute_error": 1.8
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the fan and the sofa (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "2.8 meters",
+          "ground_truth": "2.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.8,
+          "parsed_ground_truth": 2.5,
+          "absolute_error": 0.3
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the table and the printer (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.1 meters",
+          "ground_truth": "4.3",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.1,
+          "parsed_ground_truth": 4.3,
+          "absolute_error": 1.2
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the backpack and the printer (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "6.2 meters",
+          "ground_truth": "3.4",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 6.2,
+          "parsed_ground_truth": 3.4,
+          "absolute_error": 2.8
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the door and the printer (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "5.4 meters",
+          "ground_truth": "3.0",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 5.4,
+          "parsed_ground_truth": 3.0,
+          "absolute_error": 2.4
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the table and the fan (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "1.2 meters",
+          "ground_truth": "3.4",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.2,
+          "parsed_ground_truth": 3.4,
+          "absolute_error": 2.2
+        },
+        {
+          "question": "You are a robot beginning at the sofa and facing the wall behind the sofa. You want to navigate to the printer. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the paper disposal bin. 3. [please fill in] 4. Go forward until the electric fan. 5. [please fill in] 6. Go forward until the printer. You have reached the final destination.",
+          "question_type": "route_planning",
+          "gemini_answer": "C. Turn Left, Turn Right, Turn Left",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        }
+      ],
+      "num_unmatched_response_questions": 0,
+      "num_missing_response_questions": 0,
+      "unmatched_response_questions": [],
+      "missing_response_questions": []
+    },
+    {
+      "scene_name": "scene0697_01",
+      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0697_01_gemini_response.json",
+      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0697_01_questions.json",
+      "summary": {
+        "num_questions": 63,
+        "num_numeric_questions": 16,
+        "num_mcq_questions": 47,
+        "numeric_mean_absolute_error": 1.6313,
+        "numeric_median_absolute_error": 1.0,
+        "numeric_max_absolute_error": 14.0,
+        "numeric_num_exact_matches": 3,
+        "mcq_num_correct": 7,
+        "mcq_accuracy": 0.1489,
+        "per_question_type": {
+          "obj_appearance_order": {
+            "num_questions": 16,
+            "evaluation_type": "mcq",
+            "num_correct": 0,
+            "accuracy": 0.0
+          },
+          "object_abs_distance": {
+            "num_questions": 7,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.7286,
+            "max_absolute_error": 1.7
+          },
+          "object_counting": {
+            "num_questions": 4,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 0.5,
+            "max_absolute_error": 1.0
+          },
+          "object_rel_direction_easy": {
+            "num_questions": 3,
+            "evaluation_type": "mcq",
+            "num_correct": 0,
+            "accuracy": 0.0
+          },
+          "object_rel_direction_hard": {
+            "num_questions": 5,
+            "evaluation_type": "mcq",
+            "num_correct": 2,
+            "accuracy": 0.4
+          },
+          "object_rel_direction_medium": {
+            "num_questions": 6,
+            "evaluation_type": "mcq",
+            "num_correct": 1,
+            "accuracy": 0.1667
+          },
+          "object_rel_distance": {
+            "num_questions": 16,
+            "evaluation_type": "mcq",
+            "num_correct": 3,
+            "accuracy": 0.1875
+          },
+          "object_size_estimation": {
+            "num_questions": 4,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 4.5,
+            "max_absolute_error": 14.0
+          },
+          "room_size_estimation": {
+            "num_questions": 1,
+            "evaluation_type": "numeric",
+            "mean_absolute_error": 1.0,
+            "max_absolute_error": 1.0
+          },
+          "route_planning": {
+            "num_questions": 1,
+            "evaluation_type": "mcq",
+            "num_correct": 1,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "question_results": [
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (mirror, window, lamp, trash bin) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. trash bin",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (lamp, window, pillow, tv) is the closest to the mirror?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. tv",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (lamp, window, pillow, nightstand) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. window",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (closet, bed, trash bin, mirror) is the closest to the tv?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. mirror",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (window, tv, nightstand, lamp) is the closest to the mirror?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. tv",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (bed, tv, lamp, mirror) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. mirror",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (lamp, trash bin, bed, mirror) is the closest to the tv?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. mirror",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (window, trash bin, mirror, pillow) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. trash bin",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (bed, tv, pillow, window) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. window",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (nightstand, lamp, closet, bed) is the closest to the trash bin?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "C. closet",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (lamp, bed, tv, window) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. window",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (closet, window, mirror, tv) is the closest to the trash bin?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. closet",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (trash bin, pillow, lamp, window) is the closest to the mirror?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. trash bin",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "A",
+          "is_correct": true
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (mirror, trash bin, pillow, nightstand) is the closest to the closet?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "B. trash bin",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (tv, nightstand, trash bin, window) is the closest to the mirror?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "A. tv",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "Measuring from the closest point of each object, which of these objects (nightstand, trash bin, pillow, closet) is the closest to the mirror?",
+          "question_type": "object_rel_distance",
+          "gemini_answer": "D. closet",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the lamp, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "60 cm",
+          "ground_truth": "63",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 60.0,
+          "parsed_ground_truth": 63.0,
+          "absolute_error": 3.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the tv, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "95 cm",
+          "ground_truth": "96",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 95.0,
+          "parsed_ground_truth": 96.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the mirror, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "120 cm",
+          "ground_truth": "120",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 120.0,
+          "parsed_ground_truth": 120.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "What is the length of the longest dimension (length, width, or height) of the trash bin, measured in centimeters?",
+          "question_type": "object_size_estimation",
+          "gemini_answer": "40 cm",
+          "ground_truth": "26",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 40.0,
+          "parsed_ground_truth": 26.0,
+          "absolute_error": 14.0
+        },
+        {
+          "question": "If I am standing by the lamp and facing the closet, is the mirror to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "C. front-left",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the lamp and facing the mirror, is the closet to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "B. front-right",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the tv and facing the closet, is the trash bin to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "B. back-right",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the tv and facing the trash bin, is the closet to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "D. front-left",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "D",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the closet and facing the tv, is the trash bin to my front-left, front-right, back-left, or back-right?\nThe directions refer to the quadrants of a Cartesian plane (if I am standing at the origin and facing along the positive y-axis).",
+          "question_type": "object_rel_direction_hard",
+          "gemini_answer": "B. front-left",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the lamp and facing the closet, is the trash bin to the left or the right of the closet?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "A. left",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the lamp and facing the trash bin, is the closet to the left or the right of the trash bin?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "B. right",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the closet and facing the lamp, is the trash bin to the left or the right of the lamp?",
+          "question_type": "object_rel_direction_easy",
+          "gemini_answer": "A. right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What is the size of this room (in square meters)? \nIf multiple rooms are shown, estimate the size of the combined space.",
+          "question_type": "room_size_estimation",
+          "gemini_answer": "15 square meters",
+          "ground_truth": "16.0",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 15.0,
+          "parsed_ground_truth": 16.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: tv, bed, window, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. tv, window, bed, trash bin",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: lamp, nightstand, mirror, tv?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. lamp, nightstand, mirror, tv",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, tv, closet, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. window, tv, closet, trash bin",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: lamp, trash bin, tv, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. lamp, nightstand, trash bin, tv",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, pillow, tv, mirror?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. window, pillow, tv, mirror",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: tv, window, mirror, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. tv, window, mirror, nightstand",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, tv, pillow, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. window, tv, pillow, trash bin",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: window, mirror, tv, closet?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "A. window, mirror, tv, closet",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: mirror, tv, window, bed?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. mirror, tv, window, bed",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: trash bin, window, tv, nightstand?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. trash bin, window, tv, nightstand",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: bed, tv, mirror, lamp?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. bed, tv, mirror, lamp",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: lamp, closet, tv, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. lamp, closet, tv, trash bin",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: pillow, tv, lamp, trash bin?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. pillow, tv, lamp, trash bin",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: lamp, tv, closet, mirror?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "B. lamp, tv, closet, mirror",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: bed, trash bin, lamp, tv?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "C. bed, trash bin, lamp, tv",
+          "ground_truth": "D",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "D",
+          "is_correct": false
+        },
+        {
+          "question": "What will be the first-time appearance order of the following categories in the video: tv, lamp, mirror, pillow?",
+          "question_type": "obj_appearance_order",
+          "gemini_answer": "D. tv, lamp, mirror, pillow",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "D",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the closet and facing the mirror, is the trash bin to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "C. left",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "C",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the closet and facing the trash bin, is the mirror to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "A. right",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the mirror and facing the closet, is the trash bin to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. left",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        },
+        {
+          "question": "If I am standing by the tv and facing the closet, is the mirror to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. back",
+          "ground_truth": "C",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "C",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the tv and facing the mirror, is the closet to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "B. back",
+          "ground_truth": "A",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "A",
+          "is_correct": false
+        },
+        {
+          "question": "If I am standing by the closet and facing the tv, is the mirror to my left, right, or back?\nAn object is to my back if I would have to turn at least 135 degrees in order to face it.",
+          "question_type": "object_rel_direction_medium",
+          "gemini_answer": "A. back",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "A",
+          "parsed_ground_truth": "B",
+          "is_correct": false
+        },
+        {
+          "question": "How many bed(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "How many window(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "1",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 1.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many pillow(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "4",
+          "ground_truth": "3",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 4.0,
+          "parsed_ground_truth": 3.0,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "How many nightstand(s) are in this room?",
+          "question_type": "object_counting",
+          "gemini_answer": "2",
+          "ground_truth": "2",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.0,
+          "parsed_ground_truth": 2.0,
+          "absolute_error": 0.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the trash bin and the tv (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "2.8 meters",
+          "ground_truth": "3.0",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.8,
+          "parsed_ground_truth": 3.0,
+          "absolute_error": 0.2
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the trash bin and the closet (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "0.4 meters",
+          "ground_truth": "0.9",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 0.4,
+          "parsed_ground_truth": 0.9,
+          "absolute_error": 0.5
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the closet and the lamp (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.5 meters",
+          "ground_truth": "2.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.5,
+          "parsed_ground_truth": 2.5,
+          "absolute_error": 1.0
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the trash bin and the mirror (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "2.4 meters",
+          "ground_truth": "0.7",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.4,
+          "parsed_ground_truth": 0.7,
+          "absolute_error": 1.7
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the mirror and the lamp (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "2.8 meters",
+          "ground_truth": "2.9",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.8,
+          "parsed_ground_truth": 2.9,
+          "absolute_error": 0.1
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the closet and the tv (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "3.2 meters",
+          "ground_truth": "3.5",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 3.2,
+          "parsed_ground_truth": 3.5,
+          "absolute_error": 0.3
+        },
+        {
+          "question": "Measuring from the closest point of each object, what is the distance between the mirror and the closet (in meters)?",
+          "question_type": "object_abs_distance",
+          "gemini_answer": "2.6 meters",
+          "ground_truth": "1.3",
+          "evaluation_type": "numeric",
+          "parsed_prediction": 2.6,
+          "parsed_ground_truth": 1.3,
+          "absolute_error": 1.3
+        },
+        {
+          "question": "You are a robot beginning at the dollhouse nearby the window and facing the window. You want to navigate to the hanging picture. You will perform the following actions (Note: for each [please fill in], choose either 'turn back,' 'turn left,' or 'turn right.'): 1. [please fill in] 2. Go forward until the cabinet with a mirror on top of that. 3. [please fill in] 4. Go forward until the hanging picture. You have reached the final destination.",
+          "question_type": "route_planning",
+          "gemini_answer": "B. Turn Back, Turn Right",
+          "ground_truth": "B",
+          "evaluation_type": "mcq",
+          "parsed_prediction": "B",
+          "parsed_ground_truth": "B",
+          "is_correct": true
+        }
+      ],
+      "num_unmatched_response_questions": 0,
+      "num_missing_response_questions": 0,
+      "unmatched_response_questions": [],
+      "missing_response_questions": []
     }
   ],
   "overall_summary": {
-    "num_scenes_compared": 3,
-    "num_questions_compared": 81,
-    "overall_numeric_mean_absolute_error": 15.8261,
-    "overall_numeric_median_absolute_error": 2.95,
+    "num_scenes_compared": 7,
+    "num_questions_compared": 321,
+    "overall_numeric_mean_absolute_error": 11.4919,
+    "overall_numeric_median_absolute_error": 2.1,
     "overall_numeric_max_absolute_error": 332.0,
-    "overall_mcq_accuracy": 0.7714,
-    "overall_mcq_num_correct": 27,
-    "overall_mcq_num_questions": 35
+    "overall_mcq_accuracy": 0.3655,
+    "overall_mcq_num_correct": 72,
+    "overall_mcq_num_questions": 197
   }
 }
