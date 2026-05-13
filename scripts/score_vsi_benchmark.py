@@ -13,8 +13,8 @@ import sys
 from typing import Any, Dict, List, Optional
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_RESPONSE_DIR = REPO_ROOT / "data" / "vsi_bench" / "gemini_response"
-DEFAULT_GROUND_TRUTH_DIR = REPO_ROOT / "data" / "vsi_bench" / "exports"
+DEFAULT_RESPONSE_DIR = REPO_ROOT / "gemini_response"
+DEFAULT_GROUND_TRUTH_DIR = REPO_ROOT / "scannet_questions"
 
 MCA_QUESTION_TYPES = [
     "object_rel_direction_easy",
@@ -311,7 +311,8 @@ def save_report(report: Dict[str, Any], pretty: bool, save_json: Optional[str]) 
     if not save_json:
         return None
     if save_json == "auto":
-        output_path = REPO_ROOT / "data" / "vsi_bench" / "gemini_response" / "gemini_vsibench_scores.json"
+        response_dir = Path(report["response_dir"])
+        output_path = response_dir / "gemini_vsibench_scores.json"
     else:
         output_path = Path(save_json).expanduser()
     output_path.parent.mkdir(parents=True, exist_ok=True)

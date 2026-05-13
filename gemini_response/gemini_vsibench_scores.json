@@ -1,13 +1,13 @@
 {
-  "response_dir": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response",
-  "ground_truth_dir": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports",
+  "response_dir": "gemini_response",
+  "ground_truth_dir": "scannet_questions",
   "num_scenes_scored": 7,
   "num_total_questions_scored": 321,
   "scene_reports": [
     {
       "scene_name": "scene0207_02",
-      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0207_02_gemini_response.json",
-      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0207_02_questions.json",
+      "response_file": "gemini_response/scene0207_02_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0207_02_questions.json",
       "num_questions_in_ground_truth": 76,
       "num_questions_scored": 76,
       "num_missing_predictions": 0,
@@ -30,8 +30,8 @@
     },
     {
       "scene_name": "scene0222_01",
-      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0222_01_gemini_response.json",
-      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0222_01_questions.json",
+      "response_file": "gemini_response/scene0222_01_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0222_01_questions.json",
       "num_questions_in_ground_truth": 47,
       "num_questions_scored": 47,
       "num_missing_predictions": 0,
@@ -54,8 +54,8 @@
     },
     {
       "scene_name": "scene0231_00",
-      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0231_00_gemini_response.json",
-      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0231_00_questions.json",
+      "response_file": "gemini_response/scene0231_00_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0231_00_questions.json",
       "num_questions_in_ground_truth": 51,
       "num_questions_scored": 51,
       "num_missing_predictions": 0,
@@ -77,8 +77,8 @@
     },
     {
       "scene_name": "scene0277_02",
-      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0277_02_gemini_response.json",
-      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0277_02_questions.json",
+      "response_file": "gemini_response/scene0277_02_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0277_02_questions.json",
       "num_questions_in_ground_truth": 20,
       "num_questions_scored": 20,
       "num_missing_predictions": 0,
@@ -97,8 +97,8 @@
     },
     {
       "scene_name": "scene0518_00",
-      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0518_00_gemini_response.json",
-      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0518_00_questions.json",
+      "response_file": "gemini_response/scene0518_00_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0518_00_questions.json",
       "num_questions_in_ground_truth": 10,
       "num_questions_scored": 10,
       "num_missing_predictions": 0,
@@ -116,8 +116,8 @@
     },
     {
       "scene_name": "scene0593_00",
-      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0593_00_gemini_response.json",
-      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0593_00_questions.json",
+      "response_file": "gemini_response/scene0593_00_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0593_00_questions.json",
       "num_questions_in_ground_truth": 54,
       "num_questions_scored": 54,
       "num_missing_predictions": 0,
@@ -141,8 +141,8 @@
     },
     {
       "scene_name": "scene0697_01",
-      "response_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/gemini_response/scene0697_01_gemini_response.json",
-      "ground_truth_file": "/Users/aashishkumar/Documents/Projects/thinking-in-space/data/vsi_bench/exports/scene0697_01_questions.json",
+      "response_file": "gemini_response/scene0697_01_gemini_response.json",
+      "ground_truth_file": "scannet_questions/scene0697_01_questions.json",
       "num_questions_in_ground_truth": 63,
       "num_questions_scored": 63,
       "num_missing_predictions": 0,
